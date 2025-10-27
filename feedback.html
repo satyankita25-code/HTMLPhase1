@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Submit Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>Student Profile & Course Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <hr>
+    </header>
+    <main>
+        <h1> Submit feedback</h1>
+        <p>We value your opinions and feedback! Please take a moment to share your thoughts about the Student Portal.</p>
+    <hr>
+        <form>
+            <h2> Personal Information</h2>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+        <br><br>
+    
+        <label for="feedbacktype">feedback type:</label>
+        <select id="feedbacktype" name="feedbacktype">
+            <option value="">Select a type</option>
+            <option value="suggestion">Suggestion</option>
+                <option value="complaint">Complaint</option>
+                <option value="compliment">Compliment</option>
+                <option value="bug">Bug Report</option>
+                <option value="other">Other</option>
+
+        </select>
+        <br><br>
+        <label> Rate Your Experience:</label><br>
+          <input type="radio" id="excellent" name="rating"   value="excellent">
+            <label for="excellent">Excellent</label><br>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label><br>
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label><br>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br>
+            <input type="radio" id="verypoor" name="rating" value="verypoor">
+            <label for="verypoor">Very Poor</label><br>
+
+     <br>
+
+            <label>Which sections of the portal do you use most? (Check all that apply)</label><br>
+            <input type="checkbox" id="profile" name="sections" value="profile">
+            <label for="profile">Profile</label><br>
+            <input type="checkbox" id="courses" name="sections" value="courses">
+            <label for="courses">Courses</label><br>
+            <input type="checkbox" id="grades" name="sections" value="grades">
+            <label for="grades">Grades</label><br>
+            <input type="checkbox" id="contact" name="sections" value="contact">
+            <label for="contact">Contact</label><br>
+
+     <br>
+
+           <label for="suggestions">Suggestions for Improvement:</label><br>
+            <textarea id="suggestions" name="suggestions" rows="5" cols="50" placeholder="Any suggestions to make the portal better?"></textarea>
+
+      <br><br>
+
+           <button type="submit">Submit Feedback</button>
+    </form>
+    <hr>
+    </main>
+<footer>
+    <p> thanks for feedback</p>
+</footer>
+
+</body>
+</html>
